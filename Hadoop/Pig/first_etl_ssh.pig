@@ -1,6 +1,6 @@
 -- Note: You need to replace the s3 directory to your own 
 
-data = LOAD 's3://budt758bsp2016-vidhyar/loudacre/ad_data1.txt' AS (keyword:chararray, 
+data = LOAD 's3://budt758b-lbartoli/loudacre/ad_data1.txt' AS (keyword:chararray, 
                campaign_id:chararray,
                date:chararray, 
                time:chararray,
@@ -21,5 +21,5 @@ reordered = FOREACH usa_only GENERATE campaign_id,
                was_clicked,
                cpc;
 
-STORE reordered INTO 's3://budt758cfl2016-vidhyar/home/vidhyar/ad_data1_ssh';
+STORE reordered INTO 's3://budt758b-lbartoli/home/lbartoli/ad_data1_ssh';
 
