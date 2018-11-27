@@ -3,14 +3,13 @@ from pyspark import SparkContext
 
 sc = SparkContext()
 
+#Type code in pyspark in VMWare
 
 #  Find K Means of Loudacre device status locations
 # 
 # Input data: file(s) with device status data (delimited by '|')
 # including latitude (13th field) and longitude (14th field) of device locations 
 # (lat,lon of 0,0 indicates unknown location)
-#
-# NOTE: Copy to pyspark using %paste
 
 # for a point p and an array of points, return the index in the array of the point closest to p
 def closestPoint(p, points):
